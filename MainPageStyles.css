@@ -14,9 +14,7 @@ body {
 }
 
 
-#mainText {
-    font-style: italic;
-}
+
 
 #mainBarContainer {
     position: relative;
@@ -36,7 +34,39 @@ body {
     align-items: baseline;
 }
 
-.barContainer  div {
+#mainName{
+    font-weight:bold;
+    font-style:oblique;
+    color:#FFFFFF;
+    letter-spacing:0pt;
+    word-spacing:18pt;
+    font-size:191%;
+    text-align:left;
+    font-family:georgia, serif;
+    line-height:1;
+}
+
+
+
+
+
+
+.bar a{
+    position: relative;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+}
+.bar a div{
+    height: 100%;
+    width: 100%;
+}
+.bar a div img{
+    height: 80%;
+    width: 100%;
+}
+
+.bar {
     background: red;
     height: 400px;
     width: 550px;
@@ -45,7 +75,13 @@ body {
 
 }
 
-.barContainer div:hover {
+.bar:hover {
     box-shadow: 0 0 50px rgba(0,0,0,0.5);
+
+}
+
+
+.barText {
+    color: black;
 
 }
