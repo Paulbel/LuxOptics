@@ -1,5 +1,4 @@
 var openedElement = null;
-var shadeIsOpened = true;
 
 $(document).ready(function () {
     $(".bar").click(function (event) {
@@ -16,23 +15,6 @@ $(document).ready(function () {
             tabOpen(infodiv);
         }
     });
-
-    $(".arrow").click(function (event) {
-        var arrow = event.target;
-
-        arrow.classList.add()
-        if(shadeIsOpened == true) {
-            shadeIsOpened = false;
-            arrow.classList.remove("rotateArrowTop");
-            arrow.classList.add("rotateArrowDown");
-        }
-        else {
-
-            shadeIsOpened = true;
-            arrow.classList.remove("rotateArrowDown");
-            arrow.classList.add("rotateArrowTop");
-        }
-    })
 });
 
 function tabOpen(tab) {
