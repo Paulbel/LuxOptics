@@ -3,16 +3,18 @@ var openedElement = null;
 $(document).ready(function () {
     $(".bar").click(function (event) {
         var bar = event.target.parentNode;
-        var infodiv = bar.childNodes.item(5);
-        if (openedElement == null) {
-            tabOpen(infodiv);
-        }
-        else if(openedElement == infodiv){
-            tabClose(infodiv);
-        }
-        else {
-            tabClose(openedElement);
-            tabOpen(infodiv);
+        if (bar.classList.contains("bar")) {
+            var infodiv = bar.childNodes.item(5);
+            if (openedElement == null) {
+                tabOpen(infodiv);
+            }
+            else if (openedElement == infodiv) {
+                tabClose(infodiv);
+            }
+            else {
+                tabClose(openedElement);
+                tabOpen(infodiv);
+            }
         }
     });
 });
