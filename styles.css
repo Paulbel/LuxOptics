@@ -4,15 +4,12 @@
     width: 60%;
     left: 0;
     top: 0;
-    position: fixed;
     z-index: 1;
     margin-left: 20%;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.7);
+    position: relative
 }
 
-body {
-    background-color: lightblue;
-}
 
 
 .rotateArrow {
@@ -34,9 +31,11 @@ body {
     margin: 0;
 }
 
+
 #staticShade {
     width: 100%;
     top: 0;
+
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -47,7 +46,8 @@ body {
     width: 20%;
     height: 100px;
     background: red;
-
+    z-index: 0;
+    position: relative
 }
 
 #luxFont {
@@ -145,11 +145,3 @@ body {
 }
 
 
-#doorStep {
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    height:100px;
-    width:100%;
-    background:#999;
-}
